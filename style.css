@@ -1,0 +1,592 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/*Navigation Bar styling*/
+.navtopbar {
+  background-color: white;
+  position: relative;
+  z-index: 999;
+  font-size: 75px;
+
+}
+/*Navigation bar nested lists styling for brands and logo etc*/
+.navtopbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: white;
+} 
+
+  
+.navtopbar li {
+  display: inline-block;
+  font-size: 15px;
+}
+
+.navtopbar li a {
+  color: black;
+  display: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.navtopbar ul ul{
+  position: absolute;
+  display: none;
+  font-size: 15px;
+}
+.navtopbar ul ul li{
+  display: block;
+  font-size: 15px;
+}
+.navtopbar li:hover ul{
+  display: block;
+  font-size: 15px;
+}
+.navtopbar ul ul li a:hover{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.navtopbar a{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+/*Image slide show positioning*/
+.slideshow {
+
+  position: relative;
+
+  overflow: hidden;
+
+  width: 100%;
+
+  height: 300px;
+
+}
+
+
+/*Image slideshow styling*/
+.slideshow {
+  width: 1250px;
+  height: 500px;
+  position: absolute;
+  margin: auto;
+  overflow: hidden;
+  top: 80px;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+}
+
+
+.slide {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide:first-child {
+ opacity: 1: 
+}
+.slide img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+slide-wrapper {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+}
+
+@keyframes slideshow {
+  0%, 20% {opacity: 1;}
+  25%, 45% {opacity: 0;}
+  50%, 70% {opacity: 0;}
+  75%, 100% {opacity: 0;}
+}
+/*Each Image animation CSS code*/
+.slide:nth-child(1) {
+  animation: slideshow 7s infinite;
+}
+
+.slide:nth-child(2) {
+  animation: slideshow 7s infinite;
+  animation-delay: 6s;
+}
+.slide:nth-child(3) {
+  animation: slideshow 7s infinite;
+  animation-delay: 3s;
+}
+
+.slide:nth-child(4) {
+  animation: slideshow 7s infinite;
+  animation-delay: 5s;
+}
+
+.slide:nth-child(5) {
+  animation: slideshow 7s infinite;
+  animation-delay: 4s;
+}
+
+.slide:nth-child(6) {
+  animation: slideshow 7s infinite;
+  animation-delay: 3s;
+}
+
+.slide:nth-child(7) {
+  animation: slideshow 7s infinite;
+  animation-delay: 5s;
+}
+/**Styling for popular*/
+.populartext{
+  background: transparent;
+  text-align: center;
+  font-size: 35px;
+  font-family: sans-serif;
+  position: absolute;
+  top: 690px;
+  left: 700px;
+}
+/* coca cola play aoo positioning + styling*/
+.boximage{
+  position: absolute;
+  top: 860px;
+  left: 125px;
+  border-radius: 0px;
+  
+}
+.boxtext{
+  position: absolute;
+  top: 1140px;
+  left: 150px;
+  width: 530px;
+  height: 280px;
+  font-family: sans-serif;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 24px;
+  
+}
+/*background color*/
+body{
+  background-color: #f1f1f1;
+  
+}
+/*navigation bar color*/
+header{
+  background-color: white
+}
+/*Styling and positioning for app download button*/
+.downloadapp{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.downloadapp:hover{
+color: #6e6e6e
+}
+/*sprite heatpacks positioning*/
+.boximage2{
+  position: absolute;
+  top: 850px;
+  right: 150px;
+
+  border-radius: 20px;
+  
+}
+
+.boxtext2{
+  position: absolute;
+  height: 280px;
+  width: 525px;
+  top: 1135px;
+  right: 160px;
+  background-color: white;
+  border: 2px solid white;
+  border-color: white;
+  border-radius: 20px;
+  font-size: 24px;
+  font-family: sans-serif;
+}
+/*sprite heatpacks button positioning*/
+.discovermore{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.discovermore:hover{
+  color: #6e6e6e
+}
+
+/*global impact and recycling positioning + styling*/
+.globalimpact{
+  background: transparent;
+  text-align: center;
+  font-size: 35px;
+  font-family: sans-serif;
+  position: absolute;
+  top: 1500px;
+  left: 650px;
+}
+
+.boximage3{
+  position: absolute;
+  border-radius: 20px;
+  top: 1750px;
+  right: 600px
+}
+
+.boxtext3{
+  position: absolute;
+  border-radius: 20px;
+  background-color: white;
+  border: 2px solid white;
+  border-color: white;
+  font-size: 24px;
+  font-family: sans-serif;
+  height: 480px;
+  width: 525px;
+  top: 1600px;
+  right: 200px;
+}
+/*global impact and recycling button positioning and styling*/
+.findoutmore{
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: black;
+  border: 2px solid black;
+  padding: 10px;
+  padding-left: 80px;
+  padding-right: 80px;
+  border-radius: 40px;
+  position: absolute;
+  top: 350px;
+  right: 110px;
+  text-align: center;
+}
+
+.findoutmore:hover{
+  color:#6e6e6e
+}
+/*explore our brands positioning and styling*/
+.explore{
+  position: absolute;
+  top: 2250px;
+  left: 610px;
+  font-size: 35px;
+  font-family: sans-serif;
+  
+}
+
+/*Each brand image positioning and styling*/
+.brandimage{
+  position: absolute;
+  border-radius: 20px;
+  background-color: white;
+  height: 150px;
+  width: 180px;
+  border: 50px solid white;
+  top: 2350px;
+  left:350px;
+}
+
+.brandimage1{
+  position: absolute;
+  border-radius: 20px;
+  background-color: white;
+  height: 150px;
+  width: 180px;
+  border: 50px solid white;
+  top: 2350px;
+  left:650px;
+}
+
+
+.brandimage2{
+  position: absolute;
+  border-radius: 20px;
+  background-color: white;
+  height: 150px;
+  width: 180px;
+  border: 50px solid white;
+  top: 2350px;
+  left:960px;
+}
+
+
+
+.brandimage3{
+  position: absolute;
+  border-radius: 20px;
+  background-color: white;
+  height: 150px;
+  width: 180px;
+  border: 50px solid white;
+  top: 2620px;
+  left:350px;
+}
+
+.brandimage4{
+  position: absolute;
+  border-radius: 20px;
+  background-color: white;
+  height: 150px;
+  width: 180px;
+  border: 50px solid white;
+  top: 2620px;
+  left:650px;
+}
+
+.brandimage5{
+  position: absolute;
+  border-radius: 20px;
+  background-color: white;
+  height: 150px;
+  width: 180px;
+  border: 50px solid white;
+  top: 2620px;
+  left:960px;
+}
+/*FOOTER POSITIONING AND STYLING*/
+.footerimg{
+  position: absolute;
+  top: 3150px;
+  left: 150px;
+  background: black;
+  width: 300px;
+  
+}
+
+.viewall{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border: 2px solid black;
+  padding: 10px;
+  padding-left: 150px;
+  padding-right: 150px;
+  border-radius: 40px;
+  position: absolute;
+  top: 2960px;
+  left: 620px;
+  text-align: center;
+}
+
+.viewall:hover{
+  color:#6e6e6e
+
+}
+
+.hr1{
+  position: absolute;
+  top: 3250px;
+  left: 250px;
+  width: 1100px;
+  
+}
+
+.aboutus{
+  position: absolute;
+  top: 3350px;
+  left: 150px;
+}
+
+
+footer{
+  border: 3px solid black;
+  background: black;
+  width:1840px;
+  height: 500px;
+  position: absolute;
+  top:3200px;
+  
+}
+
+
+.finalimage{
+  width: 250px;
+  height: 50px;
+  position: absolute;
+  left: 170px;
+}
+
+.seperator{
+  position: absolute;
+  left: 170px;
+  right: 170px;
+  top: 125px;
+}
+
+.locationbutton{
+  position: absolute;
+  left: 1350px;
+  top: 50px;
+  color: white;
+  border: 3px solid white;
+  border-radius: 40px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.locationbutton:hover{
+  color:#6e6e6e
+}
+
+
+.about{
+  color: #6e6e6e;
+  font-family: sans-serif;
+  font-size: 12px;
+  position: absolute;
+  left: 170px;
+  right: 170px;
+  bottom: 300px;
+  font-weight: bold;
+}
+
+.help{
+  color: #6e6e6e;
+  font-family: sans-serif;
+  font-size: 12px;
+  position: absolute;
+  left: 300px;
+  right: 300px;
+  bottom: 300px;
+  font-weight: bold;
+}
+
+.mediacent{
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  position: absolute;
+  bottom: 250px;
+  left: 170px;
+  right: 170px;
+  text-decoration: none;
+}
+
+.history{
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  position: absolute;
+  bottom: 200px;
+  left: 170px;
+  right: 170px;
+  text-decoration: none;
+}
+
+.frequent{
+  color: white;
+  font-family: sans=serif;
+  font-size: 15px;
+  position: absolute;
+  bottom: 250px;
+  left: 300px;
+  right: 300px;
+  text-decoration: none;
+}
+
+.contact{
+  color: white;
+  font-family: sans=serif;
+  font-size: 15px;
+  position: absolute;
+  bottom: 200px;
+  left: 300px;
+  right: 300px;
+  text-decoration: none;
+}
+
+.modern{
+  color: white;
+  font-family: sans=serif;
+  font-size: 15px;
+  position: absolute;
+  bottom: 150px;
+  left: 300px;
+  right: 300px;
+  text-decoration: none;
+}
+
+
+.terms{
+  color: white;
+  font-family: sans=serif;
+  font-size: 15px;
+  position: absolute;
+  bottom: 250px;
+  left: 430px;
+  right: 430px;
+  text-decoration: none;
+}
+
+.privacy{
+  color: white;
+  font-family: sans=serif;
+  font-size: 15px;
+  position: absolute;
+  bottom: 200px;
+  left: 430px;
+  right: 430px;
+  text-decoration: none;
+}
+
+.cookie{
+  color: white;
+  font-family: sans=serif;
+  font-size: 15px;
+  position: absolute;
+  bottom: 150px;
+  left: 430px;
+  right: 430px;
+  text-decoration: none;
+}
+
+.cookie1{
+  color: white;
+  font-family: sans=serif;
+  font-size: 15px;
+  position: absolute;
+  bottom: 100px;
+  left: 430px;
+  right: 430px;
+  text-decoration: none;
+}
+
+.tax{
+  color: white;
+  font-family: sans=serif;
+  font-size: 15px;
+  position: absolute;
+  bottom: 50px;
+  left: 430px;
+  right: 430px;
+  text-decoration: none;
+}
+.seperator1{
+  position: absolute;
+  left: 170px;
+  right: 170px;
+  bottom: 30px;
+}
+
+.allrights{
+  color: white;
+  position: absolute;
+  bottom:-20px;
+  right: 320px;
+}
